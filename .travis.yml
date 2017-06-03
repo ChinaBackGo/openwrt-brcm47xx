@@ -1,1 +1,9 @@
+install:
+ - ccache
+ - ./install-dependencies.sh
+script:
+ - cd SDK
+ - git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
+ - git clone https://github.com/shadowsocks/openwrt-shadowsocks.git package/shadowsocks-libev
+ - make package/shadowsocks-libev/compile V=99
 language: c
