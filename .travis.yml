@@ -21,5 +21,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: ChinaBackGo/openwrt-brcm47xx
-    tags: true
   
