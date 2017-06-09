@@ -12,13 +12,11 @@ script:
 before_deploy:
 - cd bin/brcm47xx/packages
 - tar cjf OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2 base/* packages/*
-- mv OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2 /home/travis/build/ChinaBackGo/openwrt-brcm47xx/
 deploy:
   provider: releases
   api_key:
     secure: mOW7o7FbdXF5Esgh6FacNFZwL9/W1Po2OQF8/vrR7PrLw72D1suGgSePtHuuhU3sKIV1gNlU5q3AtpSg5yDLk39g8n5HCiIc27jew47LI3KIbPRDTJAojmoqEvvHPknadg5snPf10crdfsgn7bXmpZ9onc4c1KmGtcUR+fyyxarxsRRwrpI/t50rUTDffPTe4OHtvdMLvhehNFituaIReEWkXXWRFsyuCyKnlX1Vv/IXeaxWmkB25CpSHa1YKAsRzzgWRYL5675l+IhC93a9efECOh97IIsHV/LsjpJrQksPqk/gZVx0RE90K6+MugBbXsepxVgKsXV0k8NZMDxNQTObpUFd+r1YcZkLavKzbJenHqwknmobGsPT5RPra0mv0MbspD50XIsav99NDA4v4jp6s1U7j1ocwo92uCYguB8RMP+rWfdG3Ouz6FTbzCRaBnZNQMs6iMtBY+gcmYDO40BRCIiKbReIwFcM+Fyyyrc8Sm+kCX2D9HpVWDkyJx+uhkvRLDDli0kaMKFNRYKQcS8Asmi4iCrs+Mmfc+3g7pgZK8JI7Omd5N7ZOedzjW93gXoGUEZ+aW06cIZSXpiRjtbSt1mmWkrL5KgUKwXbCX5BVL526HMRnN4q6dH56WmV0gixQu8xviGUIopY/wlJDckTznL108ZDPOoy8KjnB9w=
-  file: OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2
+  file: OpenWrt-SDK-15.05.1-brcm47xx-mips74k_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_6/bin/brcm47xx/packages/OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2
   skip_cleanup: true
   on:
     repo: ChinaBackGo/openwrt-brcm47xx
-  
