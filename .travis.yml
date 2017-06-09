@@ -12,7 +12,7 @@ script:
 before_deploy:
 - cd bin/brcm47xx/packages
 - tar cjf OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2 base/* packages/*
-- mv OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2 $TRAVIS_BUILD_DIR
+- mv OpenWrt-SDK-15.05.1-brcm47xx-mips74k-shadowsocks-libev.tar.bz2 /home/travis/build/ChinaBackGo/openwrt-brcm47xx/
 deploy:
   provider: releases
   api_key:
